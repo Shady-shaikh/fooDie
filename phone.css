@@ -1,0 +1,153 @@
+#navbar ul{
+    overflow: hidden;
+    flex-direction: column;
+    margin: 0.6rem;
+    color:white;
+}
+#navbar::before{
+    /* background:url('https://source.unsplash.com/random?food,veg') center center/cover no-repeat; */ 
+    border-bottom-right-radius: 5rem;
+    border-bottom-left-radius: 5rem;
+}
+#navbar ul li {
+    padding: 0.6rem;
+}
+
+.textandlogo {
+    display: flex;
+    flex-direction: column;
+}
+.introSec{
+    display: block;
+    width: 100%;
+    margin: 5rem auto;
+    /* overflow-x: hidden; */
+}
+.leftInfo {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x:hidden;
+    margin: 2rem auto;
+    /* border: 2px solid red; */
+}
+
+.rightInfo .conatinerRight {
+    margin:7rem auto;
+    position: relative;
+    right: 0.1rem;
+}
+
+.belowintro .boxcard {
+    margin:15rem auto 5rem auto;
+}
+
+.search_box {
+    margin-left: 2rem;
+}
+
+.testimonials .personalcards .boxwhitecard {
+    margin: 1rem;
+    padding: 1rem;
+}
+.testimonials .headingT {
+    margin-bottom: 4rem;
+}
+
+.testimonials .personalcards {
+    margin: 10rem auto;
+}
+
+.testimonials .personalcards .boxwhitecard {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.testimonials .personalcards .boxwhitecard .imgbox {
+    position: relative;
+    left: 3rem;
+    transition: all 0.5s;
+}
+
+.footer {
+    display: flex;
+    /* overflow:hidden; */
+    flex-wrap: wrap;
+}
+
+.bike {
+    /* margin-left: 1rem; */
+    height: 4rem;
+}
+.bike img {
+    margin-left: 0.2rem;
+}
+
+.fastestDeText {
+    margin-left: 1rem;
+}
+
+.citynames {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapperFoot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem auto;
+    padding:1rem;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.imgAndText{
+    flex-direction: column;
+}
+.imgAndText span{
+    display: flex;
+}
+.cotactcontainer .insideBox div{
+    width:20rem;
+    border-radius:1rem;
+}
+.imgAndText img{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.belowService {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    width: 1rem;
+    margin:  auto;
+}
+.belowService .containerGrid {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.services::before {
+    height: 63%;
+}
+.services {
+    height: 25rem;
+}
+.headeingSC{
+    text-align: center;
+    margin: auto 1rem;
+}
+.footer .gridC{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.footer .gridC .cols h4{
+    margin: 2rem;
+}

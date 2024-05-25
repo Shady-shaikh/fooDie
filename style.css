@@ -1,0 +1,1042 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Crete+Round&family=Roboto+Mono:wght@700&family=Rubik:wght@500;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+    background-color: rgb(241, 239, 239);
+    font-family: 'Comfortaa', cursive;
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    top: 0px;
+    position: sticky;
+    z-index: 1;
+}
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(black,white);
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#navbar ul {
+    display: flex;
+    font-size: 1rem;
+    align-items: center;
+}
+
+#navbar ul h2 {
+    font-size: 2rem;
+    font-family: 'Roboto Mono', monospace;
+    margin-left: 0.5rem;
+}
+
+#navbar ul li {
+    display: flex;
+    list-style: none;
+    padding: 1rem;
+}
+
+.btn {
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-family: 'Crete Round', serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.active,
+.btn:hover {
+    background-color: rgb(219, 148, 15);
+    color: white;
+    border-radius: 1rem;
+}
+
+.logo img {
+    height: 3rem;
+    width: 3rem;
+    /* margin: 2rem 5rem; */
+}
+
+.logo {
+    display: flex;
+    margin: 0rem 5rem;
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search_box {
+    background: white;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    margin-left: 8rem;
+    display: flex;
+}
+
+.search_box .search_btn {
+    width: 2rem;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.search_box .search_btn img {
+    height: 1rem;
+    width: 1rem;
+}
+
+.search_box .input_search {
+    outline: none;
+    border: none;
+    background: white;
+    padding: 0.5rem 1rem;
+    width: 13rem;
+    font-size: 0.8rem;
+}
+
+/* Intro section */
+
+.introSec {
+    display: flex;
+    /* background-color:rebeccapurple */
+}
+
+/* .introSec::before{
+    content: "";
+    top: 0;left: 0;
+    position: absolute;
+    background:url('https://source.unsplash.com/random?food,veg') center center/cover no-repeat;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+} */
+
+.leftInfo {
+    margin-top: 3rem;
+    /* border:2px solid red; */
+    position: relative;
+}
+
+.leftInfo .bike {
+    display: flex;
+}
+
+.bike {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245, 188, 81);
+    border-radius: 1rem;
+    width: 12rem;
+    padding: 0.5rem;
+    margin-left: 10rem;
+    transition: 0.5s;
+}
+
+.bike:hover {
+    transform: rotate(360deg);
+}
+
+.bike img {
+    height: 2rem;
+    width: 2rem;
+    margin-left: 1rem;
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+    background-color: white;
+}
+
+.bike .justext h2 {
+    color: rgba(153, 46, 7, 0.61);
+}
+
+.fastestDeText {
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+    margin-left: 10rem;
+    margin-top: 2rem;
+}
+
+.fastestDeText h1 {
+    font-size: 3.5rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.fastestDeText h2 {
+    font-size: 3.5rem;
+    color: orange;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.fastestDeText p {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.fastestDeText button {
+    padding: 0.7rem;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    background-color: rgb(219, 148, 15);
+    color: white;
+    display: block;
+    margin: 1rem auto;
+    font-family: 'Roboto Mono', monospace;
+    width: 10rem;
+    transition: all 1s;
+}
+
+.fastestDeText button:hover {
+    border: 0.2rem solid orange;
+    width: 20rem;
+}
+
+.textandlogo {
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.textandlogo img {
+    height: 11rem;
+    width: 15rem;
+}
+
+/* right intro */
+
+.rightInfo {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+.rightInfo .conatinerRight {
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 25rem;
+    justify-content: center;
+    max-width: 30rem;
+    position: absolute;
+    right: 3rem;
+    top: 7rem;
+    /* border:2px solid red; */
+}
+
+.rightInfo .conatinerRight::before {
+    content: "";
+    width: 100%;
+    background: url('https://source.unsplash.com/random?food') center center no-repeat;
+    border-radius: 5rem;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.rightInfo .conatinerRight .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0.5rem 0.2rem gray;
+    height: 11rem;
+    border-radius: 1.5rem;
+    margin: 2rem;
+    width: 9rem;
+    transition: 0.5s;
+}
+
+.rightInfo .conatinerRight .box:hover {
+    transform: scale(1.3);
+    z-index: 1;
+}
+
+.rightInfo .conatinerRight .box h1 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: -1rem;
+}
+
+.rightInfo .conatinerRight .box h5 {
+    font-size: 0.7rem;
+    color: gray;
+    margin-top: 0.5rem;
+}
+
+.rightInfo .conatinerRight .box .price {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.rightInfo .conatinerRight .box .price p {
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.rightInfo .conatinerRight .box .price span {
+    font-size: 0.8rem;
+    color: red;
+    margin-right: 0.2rem;
+}
+
+.rightInfo .conatinerRight .box img {
+    height: 7rem;
+    width: 7rem;
+    transform: translateY(-3rem);
+}
+
+/* below Intro */
+
+.belowintro {
+    margin-top: 5rem;
+}
+
+.belowintro .boxcard {
+    display: flex;
+    justify-content: space-around;
+    align-items: space-around;
+    flex-wrap: wrap;
+    /* margin: 2rem; */
+    /* border:2px solid red; */
+}
+
+.belowintro .boxcard .boxes img {
+    height: 8rem;
+    width: 7rem;
+    transform: translateY(-3rem);
+}
+
+.belowintro .boxcard .boxes {
+    display: flex;
+    height: 10rem;
+    width: 16rem;
+    border-radius: 2rem;
+    background-color: rgb(218, 212, 212);
+    /* box-shadow: 0 0 2rem 2rem rgba(0, 0, 0, 0.1); */
+    transition: 0.5s;
+    /* border:2px solid red; */
+    margin: 2rem;
+}
+
+.belowintro .boxcard .boxes:hover {
+    transform: scale(1.3);
+    z-index: 1;
+}
+
+.belowintro .boxcard .boxes .belowInfo h1 {
+    font-size: 1rem;
+    margin-left: 1rem;
+    font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
+    margin-top: 3rem;
+}
+
+.belowintro .boxcard .boxes .belowInfo h5 {
+    font-size: 0.8rem;
+    color: green;
+    margin-top: 1rem;
+}
+
+.belowintro .boxcard .boxes #shop {
+    height: 2rem;
+    width: 2rem;
+    margin-top: 3.5rem;
+    position: absolute;
+    margin-left: 5rem;
+    background-color: red;
+    border-radius: 1rem;
+    padding: 0.09rem;
+}
+
+.belowintro .boxcard .boxes .belowInfo .pricebelow {
+    display: flex;
+    font-size: 1rem;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    margin-top: 0.2rem;
+}
+
+.belowintro .boxcard .boxes .belowInfo .pricebelow img {
+    height: 2rem;
+    width: 2rem;
+    margin-top: 2.8rem;
+    margin-left: 1.5rem;
+}
+
+.headingP {
+    text-align: center;
+    font-size: 2.2rem;
+    margin: 5rem 1rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* top Offers */
+
+.cardoffers {
+    display: flex;
+    justify-content: space-around;
+    align-items: space-around;
+    flex-wrap: wrap;
+    margin: 2rem;
+}
+
+.cardoffers .boxoffers img {
+    height: 8rem;
+    width: 7rem;
+    transform: translateY(-3rem);
+}
+
+.cardoffers .boxoffers {
+    display: flex;
+    height: 10rem;
+    width: 16rem;
+    border-radius: 2rem;
+    background-color: rgb(245, 188, 81);
+}
+
+.cardoffers .boxoffers .belowInfo h1 {
+    font-size: 1rem;
+    margin-left: 1rem;
+    font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
+    margin-top: 3rem;
+}
+
+.cardoffers .boxoffers .belowInfo h5 {
+    font-size: 0.8rem;
+    color: green;
+    margin-top: 1rem;
+}
+
+.cardoffers .boxoffers #shop {
+    height: 2rem;
+    width: 2rem;
+    margin-top: 3.5rem;
+    position: absolute;
+    margin-left: 5rem;
+    background-color: red;
+    border-radius: 1rem;
+    padding: 0.09rem;
+}
+
+.cardoffers .boxoffers .belowInfo .pricebelow {
+    display: flex;
+    font-size: 1rem;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    margin-top: 0.2rem;
+}
+
+.cardoffers .boxoffers .belowInfo .pricebelow img {
+    height: 2rem;
+    width: 2rem;
+    margin-top: 2.8rem;
+    margin-left: 1.5rem;
+}
+
+/* trending foods */
+
+.belowintro1 .boxcardT {
+    display: flex;
+    justify-content: space-around;
+    align-items: space-around;
+    flex-wrap: wrap;
+}
+
+.belowintro1 .boxcardT .belowInfo h1 {
+    font-size: 2.2em;
+    margin-top: 1rem;
+}
+
+.belowintro1 .boxcardT .boxesT {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 13rem;
+    width: 16rem;
+    margin: 2rem;
+    border-radius: 2rem;
+    box-shadow: 2px 2px 5px 5px #ccc;
+    background-color: white;
+    /* margin:1rem; */
+}
+
+.belowintro1 .boxcardT .boxesT img {
+    width: 10rem;
+    height: 10rem;
+}
+
+/* cuisine */
+.cuisine {
+    display: flex;
+    flex-direction: column;
+}
+
+.cuisine .foodTypes {
+    display: flex;
+    justify-content: space-around;
+    /* background-color:gray; */
+    flex-wrap: wrap;
+}
+
+.cuisine .foodTypes .circularImgs {
+    display: flex;
+    /* background-color:white; */
+    width: 9rem;
+    height: 9rem;
+    margin: 1rem;
+    /* background-color:red; */
+}
+
+.cuisine .foodTypes .circularImgs img {
+    border-radius: 100%;
+    width: 100%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+
+/* testimonials */
+
+.testimonials .headingT {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+hr {
+    width: 20rem;
+    margin: auto;
+    display: block;
+    border: 2px solid #ccc;
+}
+
+.testimonials .personalcards {
+    display: flex;
+    /* background-color:gray; */
+    margin: 5rem 10rem;
+    /* border:2px solid red; */
+}
+
+.testimonials .personalcards .boxwhitecard {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 1rem;
+    margin: 2rem;
+    padding: 2rem;
+    align-items: center;
+    transition: all 0.5s;
+    /* position: relative; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.testimonials .personalcards .boxwhitecard:hover {
+    background-color: #ccc;
+    color: white;
+    transform: translateY(-60px);
+}
+
+.testimonials .personalcards .boxwhitecard h4 {
+    font-size: 1.5rem;
+    color: brown;
+    font-weight: bold;
+}
+
+.testimonials .personalcards .boxwhitecard h3 {
+    font-size: 1.1rem;
+    color: gray;
+}
+
+.testimonials .personalcards .boxwhitecard p {
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.testimonials .personalcards .boxwhitecard div {
+    margin-top: 1rem;
+}
+
+#profileT {
+    width: 6rem;
+    margin-top: -5rem;
+    border-radius: 50%;
+}
+
+.testimonials .personalcards .boxwhitecard .imgbox img {
+    width: 3rem;
+    filter: invert(70%)
+}
+
+.testimonials .personalcards .boxwhitecard .imgbox {
+    position: relative;
+    left: 10rem;
+    transition: all 0.5s;
+}
+
+/* footer */
+
+.headtingT2 {
+    font-size: 3rem;
+    margin: 3rem 3rem;
+    padding-top: 3rem;
+}
+
+.footer {
+    background-color: black;
+    overflow-x: hidden;
+    color: white;
+    padding: auto 2rem;
+}
+
+
+.citynames {
+    display: grid;
+    /* background-color:gray; */
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 5rem;
+    margin-right: 5rem;
+    grid-gap: 1rem;
+}
+
+.citynames p {
+    transition: all 0.5s;
+    font-size: 1.2rem;
+
+}
+
+/* .citynames p:hover{
+    font-size: 1.4rem;
+    color:black;
+    background-color:white;
+    border-radius:1rem;
+    padding-left: 0.5rem;
+} */
+
+.wrapperFoot {
+    display: grid;
+    margin-top: 5rem;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    /* background-color:gray; */
+    padding-left: 5rem;
+    overflow: hidden;
+}
+
+.wrapperFoot img {
+    width: 4rem;
+    height: 4rem;
+}
+
+.wrapperFoot h3 {
+    font-size: 1.5rem;
+}
+
+.companyname {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.companyname h4 {
+    font-size: 2rem;
+}
+
+.icons img {
+    background-color: black;
+}
+
+/* Contact html */
+
+.contactForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    /* position: relative; */
+}
+
+.contactForm::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url('https://source.unsplash.com/random?food,Non-veg') center center/cover no-repeat;
+    z-index: -1;
+    opacity: 0.5;
+    border-bottom-right-radius: 5rem;
+    border-bottom-left-radius: 5rem;
+}
+
+.cotactcontainer {
+    padding: 2rem;
+    background-color: white;
+    color: rgb(2, 70, 2);
+    border-radius: 3rem;
+}
+
+.cotactcontainer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 900;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.cotactcontainer h6 {
+    font-size: 1rem;
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.cotactcontainer .insideBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.cotactcontainer .insideBox div {
+    border: 0.1rem solid gray;
+    width: 30rem;
+    padding: 0.5rem;
+}
+
+.imgAndText {
+    display: flex;
+    align-items: center;
+}
+
+.imgAndText img {
+    height: 2rem;
+    width: 2rem;
+    margin-right: 1rem;
+}
+
+.imgAndText span {
+    margin-left: 1rem;
+}
+
+.imgAndText .btnContact {
+    background-color: green;
+    padding: 0.5rem;
+    border: none;
+    color: white;
+    border:0.1rem solid green;
+    margin: auto;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.imgAndText .btnContact:hover{
+    background-color:transparent;
+    border-radius:0.5rem;
+    font-weight: 600;
+    color:black;
+}
+
+.belowcotactcontainer {
+    margin-left: 0.3rem;
+}
+
+.belowcotactcontainer .h4H {
+    margin-top: 2rem;
+}
+
+.belowcotactcontainer h4 span {
+    color: blue;
+}
+
+/* Service html */
+
+.services {
+    display: flex;
+    height: 15rem;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+.services::before {
+    content: "";
+    position: absolute;
+    height: 50%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: url('https://source.unsplash.com/random?food,Non-veg') center center/cover no-repeat;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.services h3 {
+    font-size: 2.3rem;
+}
+
+.services H5 {
+    font-size: 1rem;
+    font-family: "Helvetica Neue", Helvetica, Arial;
+}
+
+.belowService {
+    background-color: white;
+    width: 60rem;
+    margin: 5rem auto;
+    padding: 3rem;
+}
+.belowService .containerGrid {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.belowService .containerGrid .boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    border: 2px solid gray;
+    height: 10rem;
+    width: 15rem;
+    margin: 1rem;
+    padding:1rem;
+    background-image: linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ),
+    url('https://source.unsplash.com/random?food,fish') ;
+    background-size: cover;
+    border-radius:0.5rem;
+}
+.belowService .containerGrid .boxes1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    border: 2px solid gray;
+    height: 10rem;
+    width: 15rem;
+    margin: 1rem;
+    padding:1rem;
+    background-image: linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ),
+    url('https://source.unsplash.com/random?food,veg') ;
+    background-size: cover;
+    border-radius:0.5rem;
+}
+.belowService .containerGrid .boxes2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    width: 15rem;
+    border: 2px solid gray;
+    height: 10rem;
+    margin: 1rem;
+    padding:1rem;
+    background-image: linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ),
+    url('https://source.unsplash.com/random?food,meat') ;
+    background-size: cover;
+    border-radius:0.5rem;
+}
+.belowService .containerGrid .boxes3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    border: 2px solid gray;
+    height: 10rem;
+    width: 15rem;
+    margin: 1rem;
+    padding:1rem;
+    background-image: linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ),
+    url('https://source.unsplash.com/random?drinks,coffe,food') ;
+    background-size: cover;
+    border-radius:0.5rem;
+}
+.belowService .containerGrid .boxes4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    border: 2px solid gray;
+    height: 10rem;
+    width: 15rem;
+    margin: 1rem;
+    padding:1rem;
+    background-image: linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ),
+    url('https://source.unsplash.com/random?food,fish') ;
+    background-size: cover;
+    border-radius:0.5rem;
+}
+.belowService .containerGrid .boxes5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    border: 2px solid gray;
+    height: 10rem;
+    width: 15rem;
+    margin: 1rem;
+    padding:1rem;
+    background-image: linear-gradient( rgba(0,0,0,.5), rgba(0,0,0,.5) ),
+    url('https://source.unsplash.com/random?food,drinks') ;
+    background-size: cover;
+    border-radius:0.5rem;
+}
+
+.imgCommon{
+    width:3rem;
+    filter: invert(100%);
+    margin-bottom: 0.5rem;
+}
+.headeingSC{
+    text-align: center;
+}
+.testiSec {
+    /* border: 2px solid red; */
+    /* border:2px solid red; */
+    margin: 2rem 5rem;
+}
+
+.testiSec .boxses{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* margin:3rem; */
+}
+.testiSec .boxses .box{
+    /* border: 2px solid black; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.9));
+    margin:1rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    width:22rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.testiSec .boxses .box img{
+    width:2rem;
+}
+.testiSec .boxses .box .userAbt img{
+    width:4rem;
+    border-radius: 50%;
+    border: 0.1rem solid gray;
+}
+.testiSec .boxses .box p{
+    margin: 1rem auto;
+}
+.testiSec .boxses .box .userAbt{
+    display: flex;
+    align-items: center;
+}
+.testiSec .boxses .box .userAbt .anotherDiv{
+    margin:auto 1rem;
+}
+.testiSec .boxses .box .userAbt .anotherDiv h5{
+    font-size:1.1rem;
+}
+.testiSec .boxses .box .userAbt .anotherDiv h6{
+    margin:0.3rem auto;
+    font-size:0.9rem;
+}
+
+.awards{
+    margin:3rem auto;
+    /* border:1px solid red; */
+}
+.awards .boxes{
+    display: flex;
+    /* border:1px solid gray; */
+    margin:auto 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.awards .boxes .box{
+    margin:1rem;
+}
+.awards .boxes .box img{
+    width:10rem;
+}
+
+.footer .gridC{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin:2rem;
+    text-align:center;
+    /* border:2px solid red; */
+}
+.footer .gridC .cols .list{
+    margin-top: 1.2rem;
+}
+.footer .gridC .cols .list h3{
+    margin-top: 2rem;
+}
+.footer .gridC .cols .list p{
+    margin:0.7rem auto;
+
+}
+
+
+@media only screen and (max-width: 1262px) {
+    html {
+        font-size: 90.5%;
+    }
+}
+
+@media only screen and (max-width: 1132px) {
+    html {
+        font-size: 87.5%;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    html {
+        font-size: 85.5%;
+    }
+}
+
+@media only screen and (max-width: 1010px) {
+    html {
+        font-size: 77.5%;
+    }
+}
