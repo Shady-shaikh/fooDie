@@ -28,6 +28,7 @@ fooDie is a basic design of a food website where you can visit diffrent sections
 You can simply open the index.html file in your favorite web browser to view the website locally.
 
 ## Usage
+* This was my first design using pure html/css 
 * Multi-Page food template website
 * You can check the design for multiple pages like contact , home and services etc.
 
