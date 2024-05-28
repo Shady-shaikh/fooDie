@@ -4,7 +4,7 @@ A template design for food website
 
 ## Description
 
-fooDie is a basic design of a food website where you can visit diffrent sections and explore multiple categories of foods.
+fooDie is a basic responsive design of a food website where you can visit diffrent sections and explore multiple categories of foods.
 
 ## Getting Started
 
